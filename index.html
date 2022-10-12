@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minurse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body oncontextmenu="return false">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images/white.png" alt="Minurse logo">
+            </div>
+            <div class="right">
+                <h1 id="title">
+                    Minurse Survey Form
+                </h1>
+                <p id="description">
+                    Fill in your Bio-data below
+                </p>
+            </div>
+        </div>
+        <div class="form" id="survey-form">
+            <form action="" method="get">
+                <label for="name" id="name-label">Full Name</label>
+                <input type="text" name="name" id="name" required placeholder="Full Name">
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" required id="email" placeholder="Email">
+                <br>
+                <label for="age" id="number-label">Age(Optional)</label>
+                <input type="number" name="age" max="30" min="15" id="" placeholder="15-30">
+                <br>
+                <label for="select" class="label">What kind of patient are you?</label>
+                <select name="select" id="">
+                    <option value="new" selected>New</option>
+                    <option value="Relapsed">Relapsed</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="Refill">Refill</option>
+                </select>
+                <br>
+                <h4>If Relapsed or Refill patient in which firm were you?</h4>
+                <label class="container-radio">
+                    <input type="radio" checked="checked" name="radio">Blue
+                    <span class="checkmark checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">
+                    <input type="radio" name="radio">Red
+                    <span class="checkmark checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">
+                    <input type="radio" name="radio">Orange
+                    <span class="checkmark checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">
+                    <input type="radio" name="radio">Purple
+                    <span class="checkmark checkmark-radio"></span>
+                  </label>    
+                 <h4>On which ward/wards were you on discharge?</h4>
+                 <label class="container-radio">
+                    <input type="checkbox" checked="checked">Male Sick
+                    <span class="checkmark checkmark-check"></span>
+                  </label>
+                  
+                  <label class="container-radio">
+                    <input type="checkbox">Female Sick
+                    <span class="checkmark checkmark-check"></span>
+                  </label>
+                  
+                  <label class="container-radio">
+                    <input type="checkbox">Female Admission
+                    <span class="checkmark checkmark-check"></span>
+                  </label>
+                  
+                  <label class="container-radio">
+                    <input type="checkbox">Kireka
+                    <span class="checkmark checkmark-check"></span>
+                  </label> 
+                  <label class="container-radio">
+                    <input type="checkbox">Biina
+                    <span class="checkmark checkmark-check"></span>
+                  </label> 
+                  <label class="container-radio">
+                    <input type="checkbox">Kirinya AB
+                    <span class="checkmark checkmark-check"></span>
+                  </label> 
+                  <label class="container-radio">
+                    <input type="checkbox">Kirinya C
+                    <span class="checkmark checkmark-check"></span>
+                  </label> 
+                  <label for="textarea">Tell us more on your condition</label>
+                  <br>
+                  <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="Tell us more..."></textarea>
+                  <br>
+                  <input type="button" value="Submit" class="btn" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
